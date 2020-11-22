@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>Random Size Thing</title>
+  <link rel="shortcut icon" href="output-onlinepngtools (7).png" type="image/x-icon">
+  <style>
+  body{
+    background-color: #B5B8B8;
+  }
+  #object{
+    position: absolute;
+    top: 5%;
+    left:38%;
+    z-index:1;
+    height:70%;
+    width:60%;
+    opacity: 100%;
+    visibility: hidden;
+  }
+  #blocker{
+    position: absolute;
+    top: 10.3%;
+    left:46.4%;
+    z-index:2;
+    height:59.2%;
+    background-color: #B5B8B8;
+    width:43%;
+    opacity: 60%;
+  }#Item_Name{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    z-index:1;
+  }
+  </style>
+</head>
+<body>
+<h1><p><b>Elephant Converter<b></p></h1>
+
+<h3><p>Welcome to the greatest measurement converter on earth.<br> The only proper way to measure everything in length and width can be <b><br>found here. Please enter the correct information on your object:</b></p>
+</h3><p> Enter Item Name:</p>
+<input type="text" id="name">
+<br><br>
+<p> Unit of Measure:</p>
+<input type="checkbox" id="inches" name="in" onclick="valueCheck()" value="Inches">
+ <label for="in"> Inches</label><br>
+ <input type="checkbox" id="foot" name="ft" onclick="valueCheck()" value="Feet">
+  <label for="ft"> Feet</label><br>
+  <input type="checkbox" id="meters" name="m" onclick="valueCheck()" value="Meters">
+   <label for="m"> meters</label><br>
+   <input type="checkbox" id="centimeters" onclick="valueCheck()" name="cm" value="Centimeters">
+    <label for="cm"> Centimeters</label><br>
+    <input type="checkbox" id="kilometers" name="km" onclick="valueCheck()"  value="kilometers">
+     <label for="km"> Kilometers</label><br>
+     <p>Measure of object in unit:</p>
+    <input type="text" id="num">
+    <h1><p id="Item_Name"></p></h1>
+      <p> Direction:</p>
+    <input type="checkbox" id="Length" name="L" onclick="directionCheck()" value="Length">
+
+     <label for="L"> Length</label><br>
+     <input type="checkbox" id="Height" name="H" onclick="directionCheck()" value="Height">
+      <label for="H"> Height</label><br>
+    <br>
+    <br>
+    <input type="button" id="submit" onclick="submit()"value="Submit">
+    <img id='object' src="elephant.png">
+    <div id="blocker"></div>
+</body>
+</html>
+<script src='elephant.js'>
+</script>
